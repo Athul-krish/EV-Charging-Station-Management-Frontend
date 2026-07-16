@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import Navbar from "./Navbar";
 
 const AddBooking = () => {
 
@@ -44,13 +45,14 @@ const AddBooking = () => {
 
   const inputStyle = {
     background: "rgba(255,255,255,.08)",
-    color: "white",
+    color: "black",
     border: "1px solid rgba(255,255,255,.25)",
     borderRadius: "12px",
   };
 
   return (
-
+<>
+<Navbar/>
     <div
       className="min-vh-100 py-5"
       style={{
@@ -363,7 +365,7 @@ const AddBooking = () => {
       </div>
 
     </div>
-
+</>
   );
 
 };
